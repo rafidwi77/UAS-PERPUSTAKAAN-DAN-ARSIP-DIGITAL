@@ -65,22 +65,22 @@
 
 # Network Engine Job Desc
 
-1. paceman -S firewalld
+1. pacman -S firewalld :
 untuk menginstall firewall
 
-2. firewall-cmd --list-all-zones
+2. firewall-cmd --list-all-zones :
 untuk melihat list semua zone yang sudah ada
 
-3. firewall-cmd --dmz --remove-service ssh
+3. firewall-cmd --dmz --remove-service ssh :
 untuk mengganti zone yang ingin di ganti
 
-4. firewall-cmd --zone=public --add-service http
+4. firewall-cmd --zone=public --add-service http :
 untuk menambah zone yang ingin ditambah
 
-5. firewall-cmd --zone=public --add-port=80/tcp
+5. firewall-cmd --zone=public --add-port=80/tcp :
 untuk menambah port yang di perlukan
 
-6. systemctl reload firewalld
+6. firewall-cmd --reload :
 untuk memuat ulang perubahan yang sudah di ganti
 
 
